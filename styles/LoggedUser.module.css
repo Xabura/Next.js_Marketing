@@ -1,0 +1,50 @@
+.section {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.section h1 {
+  font-size: xx-large;
+  color: white;
+}
+
+.section form {
+  width: min(30rem, 80%);
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  border-radius: 15px;
+  padding-block: 2rem;
+  padding-inline: 4rem;
+}
+
+.section label {
+  font-size: large;
+  margin-bottom: 0.7rem;
+}
+
+.section input {
+  padding: 0.5rem;
+  padding-left: 1rem;
+  font-size: medium;
+  border-radius: 20px;
+  border: none;
+  box-shadow: 0px 0px 3px;
+}
+
+.section button {
+  width: 50%;
+  margin-top: 2rem;
+  margin-inline: auto;
+  padding-block: 0.7rem;
+  border-radius: 20px;
+  border: none;
+  background-color: purple;
+  font-size: large;
+  color: white;
+  transition: background-color 200ms;
+  cursor: pointer;
+}

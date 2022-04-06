@@ -1,0 +1,53 @@
+.section {
+  width: 50%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
+}
+
+.section form {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  border-radius: 15px;
+  padding-block: 2rem;
+  padding-inline: 4rem;
+}
+
+.card form p {
+  margin: 0;
+  margin-top: 1rem;
+  text-align: center;
+  font-size: large;
+}
+
+.card label {
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+  font-size: large;
+}
+
+.card input {
+  padding: 0.5rem;
+  padding-left: 1rem;
+  font-size: medium;
+  border-radius: 20px;
+  border: none;
+  box-shadow: 0px 0px 3px;
+}
+
+.card button {
+  width: 50%;
+  margin-top: 2rem;
+  margin-inline: auto;
+  padding-block: 0.7rem;
+  border-radius: 20px;
+  border: none;
+  background-color: purple;
+  font-size: large;
+  color: white;
+  transition: background-color 200ms;
+  cursor: pointer;
+}

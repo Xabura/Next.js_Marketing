@@ -1,0 +1,115 @@
+.header {
+  background-color: purple;
+  display: flex;
+  justify-content: space-around;
+  gap: 30%;
+  padding-left: 4rem;
+  align-items: center;
+  color: rgba(255, 255, 255, 0.63);
+  font-size: large;
+  position: relative;
+}
+
+@media (max-width: 1000px) {
+  .header{
+    gap: 10%;
+  }
+}
+@media (max-width: 600px) {
+.header{
+  justify-content: center;
+}
+}
+
+.header div {
+  width: 40px;
+  aspect-ratio: 1;
+}
+
+.header > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+.header ul {
+  margin: 0;
+  padding-block: 1rem;
+  display: flex;
+  gap: 3rem;
+  font-weight: 600;
+}
+
+.header li {
+  position: relative;
+  display: flex;
+  margin: auto;
+}
+
+.navItem::before {
+  content: "";
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  border-top: solid;
+  opacity: 0;
+  transition: 200ms;
+}
+
+.navItem:hover {
+  color: white;
+}
+.navItem:hover::before {
+  bottom: -5px;
+  opacity: 1;
+}
+
+.header > button {
+  padding: 1px;
+  height: 50%;
+  aspect-ratio: 1;
+  background-color: white;
+  position: absolute;
+  left: 2rem;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.header > button img {
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+  border-radius: 50%;
+}
+
+.userButtons {
+  display: flex;
+  gap: 1rem;
+}
+
+.signIn {
+  border: none;
+  color: purple;
+  font-size: 1.1rem;
+  font-weight: 600;
+  background-color: rgb(255, 255, 255);
+  border-radius: 5px;
+  padding-block: 0.5rem;
+  padding-inline: 1rem;
+  transition: 200ms;
+}
+
+.signIn:hover {
+  background-color: rgba(255, 255, 255, 0.637);
+  color: black;
+  transform: scale(1.05);
+}
